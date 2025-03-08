@@ -1,19 +1,30 @@
 {
-  "name": "node-live-service",
+  "name": "my-node-service",
   "version": "1.0.0",
   "scripts": {
-    "start": "tsc && node dist/index.js",
-    "dev": "ts-node src/index.ts"
+    "dev": "ts-node-dev --respawn src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "test": "jest"
   },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "dependencies": {
-    "dotenv": "^16.4.7",
-    "ioredis": "^5.5.0",
+    "axios": "^1.8.2",
+    "express": "^4.21.2",
+    "redis": "^4.7.0",
+    "socket.io": "^4.8.1",
     "ws": "^8.18.1"
   },
   "devDependencies": {
-    "@types/node": "^22.13.8",
-    "@types/ws": "^8.5.14",
-    "ts-node": "^10.9.2",
+    "@types/express": "^5.0.0",
+    "@types/jest": "^29.5.14",
+    "@types/node": "^22.13.9",
+    "@types/ws": "^8.18.0",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.2.6",
+    "ts-node-dev": "^2.0.0",
     "typescript": "^5.8.2"
   }
 }

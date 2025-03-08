@@ -1,4 +1,4 @@
-export interface GameEvent {
+export interface IGamePayload {
     game_id: string;
     home_team: string;
     away_team: string;
